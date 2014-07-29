@@ -3,7 +3,7 @@
 loggedinorreturn();
 
 if (get_user_class() < UC_ADMINISTRATOR)
-	stderr($tracker_lang['error'], "Что вы тут забыли?");
+	stderr($tracker_lang['error'], "пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ?");
 
 require_once("admin/core.php");
 
@@ -17,12 +17,14 @@ function BuildMenu($url, $title, $image = '') {
 	} else {
 		$counter++;
 	}
+	
+	
 }
 
 switch ($op) {
 
 	case "Main":
-		echo "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"3\"><tr><td class=\"colhead\" colspan=\"6\">Панель администратора</td></tr>";
+		echo "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"3\"><tr><td class=\"colhead\" colspan=\"6\">пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</td></tr>";
 		$dir = opendir("admin/links");
 		while ($file = readdir($dir)) {
 			if (preg_match("/(\.php)$/is", $file) && $file != "." && $file != "..") require_once("admin/links/".$file."");
